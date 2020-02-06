@@ -90,12 +90,12 @@ func spawnSand() {
  
  */
 
-//// Add 100 sand particles, one each second, for the next 50 seconds
-//let actionSpawnSandParticle = SKAction.run(spawnSand)
-//let actionWait = SKAction.wait(forDuration: 0.5)
-//let sequenceSpawnThenWait = SKAction.sequence([actionSpawnSandParticle, actionWait])
-//let actionRepeatlyAddSand = SKAction.repeat(sequenceSpawnThenWait, count: 100)
-//scene.run(actionRepeatlyAddSand)
+// Add 100 sand particles, one each second, for the next 50 seconds
+let actionSpawnSandParticle = SKAction.run(spawnSand)
+let actionWait = SKAction.wait(forDuration: 0.5)
+let sequenceSpawnThenWait = SKAction.sequence([actionSpawnSandParticle, actionWait])
+let actionRepeatlyAddSand = SKAction.repeat(sequenceSpawnThenWait, count: 100)
+scene.run(actionRepeatlyAddSand)
 
 /*:
  ### Exercises
